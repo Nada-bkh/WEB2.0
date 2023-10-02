@@ -19,4 +19,5 @@ class TeacherController extends AbstractController
     {
         return $this->redirectToRoute('student_index');
     }
+
 }

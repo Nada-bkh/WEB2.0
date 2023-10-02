@@ -9,11 +9,16 @@ use Symfony\Component\Routing\Annotation\Route;
 class StudentController extends AbstractController
 {
     #[Route('/students', name: 'student_index')]
-
     public function index(): Response
     {
         return $this->render('student/index.html.twig', [
-            'message' => 'Bonjour mes étudiants',
+            'controller_name' => 'StudentController',
         ]);
+    }
+
+    #[Route('/show', name: 'show')]
+    public function show(): Response
+    {
+        return new Response('<h1>Bonjour Abdennour </h1>');
     }
 }
