@@ -61,8 +61,6 @@ class AuthorController extends AbstractController
     #[Route("/authors/{id}", name:"author_details")]
     public function authorDetails($id): Response
     {
-        // Vous devrez récupérer les détails de l'auteur en fonction de l'ID
-        // Cela dépendra de la façon dont vous stockez ces données (base de données, tableau, etc.).
 
         $author = [
             'id' => $id,
