@@ -9,3 +9,15 @@ student_index:
 go_to_index:
      path: /teacher/go-to-index
      controller: App\Controller\TeacherController::goToIndex
+student_create:
+    path: /students/create
+    controller: App\Controller\StudentController::create
+#  Route pour la mise à jour d'un étudiant
+student_edit:
+  path: /students/edit/{id}
+  controller: App\Controller\StudentController::edit
+
+# Route pour la suppression d'un étudiant
+student_delete:
+  path: /students/delete/{id}
+  controller: App\Controller\StudentController::delete
